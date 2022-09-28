@@ -7,7 +7,9 @@ function App() {
   const [page, setPage] = useState("List");
   const [questions, setQuestions] = useState([])
 
- useEffect (() => {
+
+  
+  useEffect (() => {
   fetch("http://localhost:4000/questions")
   .then(res => res.json())
   .then(data => setQuestions(data))

@@ -8,7 +8,8 @@ function QuestionList({questions}) {
       <h1>Quiz Questions</h1>
       <ul>{questions.map( (question) => { 
         console.log(question)
-        return <QuestionItem key = {question.id} question = {question} />
+        console.log
+        return <QuestionItem key = {question.id} question = {question}/>
       }
       )}</ul>
     </section>
