@@ -28,6 +28,21 @@ function QuestionItem({ question }) {
     } )
   }
 
+const  handleChangeInCorrectAnswer = (e) => {
+    console.log(e.target.value)
+    question.correctIndex = e.target.value
+  fetch(`http://localhost:4000/questions/${question.id}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "Application/JSON",
+    },
+    body: JSON.stringify({
+      "correctIndex": e.target.value
+    })
+  })
+}
+
+
   return (
     deleteState ? null : (
     <li>
@@ -35,7 +50,7 @@ function QuestionItem({ question }) {
       <h5>Prompt: {prompt}</h5>
       <label>
         Correct Answer:
-        <select defaultValue={correctIndex}>{options}</select>
+        <select onChange = {handleChangeInCorrectAnswer} defaultValue={correctIndex}>{options}</select>
       </label>
       <button onClick = {handleDelete} >Delete Question</button>
     </li>

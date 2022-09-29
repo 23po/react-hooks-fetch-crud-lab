@@ -9,7 +9,7 @@
         "key",
         "prop"
       ],
-      "correctIndex": 2
+      "correctIndex": "1"
     },
     {
       "id": 3,
@@ -21,17 +21,6 @@
         "onForm"
       ],
       "correctIndex": 0
-    },
-    {
-      "id": 4,
-      "prompt": "______ is a tool that transpiles JSX into valid JavaScript.",
-      "answers": [
-        "React",
-        "Babel",
-        "Webpack",
-        "ES6"
-      ],
-      "correctIndex": 1
     },
     {
       "id": 5,
