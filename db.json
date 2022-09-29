@@ -43,6 +43,17 @@
         "controlled"
       ],
       "correctIndex": 1
+    },
+    {
+      "prompt": "Is a calculator a computer",
+      "answers": [
+        "yes",
+        "no",
+        "it depends",
+        "maybe "
+      ],
+      "correctIndex": 0,
+      "id": 7
     }
   ]
 }
