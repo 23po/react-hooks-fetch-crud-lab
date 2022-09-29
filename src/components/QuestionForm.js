@@ -33,7 +33,7 @@ function QuestionForm(props) {
     console.log(formData);
     console.log(formData.prompt)
 
-    console.log([formData.question1, formData.question2])
+    console.log([formData.answer1, formData.answer2])
 
     fetch("http://localhost:4000/questions",{
     method: "POST",
